@@ -11,17 +11,13 @@ jobs:
   update-sponsors:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-
-      - run: npx pnpm i
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
 
       - name: Update sponsors
-        run: npm run build
+        run: pnpm run build
         env:
           SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
           SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
