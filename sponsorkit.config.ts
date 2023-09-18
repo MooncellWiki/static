@@ -24,7 +24,7 @@ export default defineConfig({
     },
     {
       title: "Sponsors",
-      monthlyDollars: 10,
+      monthlyDollars: 68,
       preset: {
         avatar: {
           size: 42,
@@ -38,17 +38,22 @@ export default defineConfig({
     },
     {
       title: "Silver Sponsors",
-      monthlyDollars: 50,
+      monthlyDollars: 128,
       preset: presets.medium,
     },
     {
       title: "Gold Sponsors",
-      monthlyDollars: 100,
+      monthlyDollars: 328,
       preset: presets.large,
     },
     {
       title: "Platinum Sponsors",
-      monthlyDollars: 500,
+      monthlyDollars: 648,
+      preset: presets.xl,
+    },
+    {
+      title: "Special Sponsors",
+      monthlyDollars: 5000,
       preset: presets.xl,
     },
   ],
