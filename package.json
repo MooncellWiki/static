@@ -3,6 +3,6 @@
     "build": "sh build.sh"
   },
   "devDependencies": {
-    "sponsorkit": "git://github.com/MooncellWiki/sponsorkit.git#main"
+    "sponsorkit": "github:MooncellWiki/sponsorkit#main"
   }
 }
