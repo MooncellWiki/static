@@ -18,14 +18,14 @@ jobs:
 
       - name: Setup CJK fonts
         run: |
-          apt-get update
-          apt-get install -y --no-install-recommends curl p7zip-full fontconfig fonts-noto-color-emoji
-          curl -sSL https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.41.3/sarasa-gothic-ttc-0.41.3.7z -o /tmp/sarasa.7z
-          7z x /tmp/sarasa.7z -o/tmp/sarasa
-          install -d /usr/share/fonts/sarasa-gothic
-          install -m644 /tmp/sarasa/*.ttc /usr/share/fonts/sarasa-gothic
-          fc-cache -fv
-          rm -rf /tmp/sarasa/ /tmp/sarasa.7z
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends curl p7zip-full fontconfig fonts-noto-color-emoji
+          sudo curl -sSL https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.41.3/sarasa-gothic-ttc-0.41.3.7z -o /tmp/sarasa.7z
+          sudo 7z x /tmp/sarasa.7z -o/tmp/sarasa
+          sudo install -d /usr/share/fonts/sarasa-gothic
+          sudo install -m644 /tmp/sarasa/*.ttc /usr/share/fonts/sarasa-gothic
+          sudo fc-cache -fv
+          sudo rm -rf /tmp/sarasa/ /tmp/sarasa.7z
 
       - name: Update sponsors
         run: pnpm run build
