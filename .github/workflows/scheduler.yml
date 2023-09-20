@@ -15,6 +15,9 @@ jobs:
 
       - name: Setup Node
         uses: ./.github/actions/setup-node
+        
+      - name: Setup CJK fonts
+        uses: RisingInIris2017/cjk-fonts-action@v1  
 
       - name: Update sponsors
         run: pnpm run build
@@ -22,6 +25,7 @@ jobs:
           SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
           SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
           SPONSORKIT_AFDIAN_EXECHANGERATE: 1
+          SPONSORKIT_AFDIAN_WEB_AUTH_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_WEB_AUTH_TOKEN }}
 
       - name: Commit
         uses: EndBug/add-and-commit@v9
