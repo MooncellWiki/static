@@ -6,7 +6,6 @@ runs:
   steps:
     - name: Set up Git repository
       uses: actions/checkout@v1
-      shell: bash
 
     - name: Install TeX Live packages
       run: sudo apt install -y texlive-base texlive-xetex texlive-lang-chinese latexmk
