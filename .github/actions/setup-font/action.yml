@@ -4,13 +4,6 @@ description: Setup Node
 runs:
   using: "composite"
   steps:
-    - name: Set up Git repository
-      uses: actions/checkout@v1
-
-    - name: Install TeX Live packages
-      run: sudo apt install -y texlive-base texlive-xetex texlive-lang-chinese latexmk
-      shell: bash
-
     - name: Download the fonts
       run: wget https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.41.3/sarasa-gothic-ttc-0.41.3.7z -O sarasa.7z
       shell: bash
