@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   sponsorkit:
-    specifier: github:MooncellWiki/sponsorkit#main
-    version: github.com/MooncellWiki/sponsorkit/14695a2d24a513a6e034723f1c38a918cbf201c3
+    specifier: github:MooncellWiki/sponsorkit#release-afdian
+    version: github.com/MooncellWiki/sponsorkit/91803fc5c48160cafc51a55ae35c5acf7499d77a
 
 packages:
 
@@ -1244,8 +1244,8 @@ packages:
       yargs-parser: 21.1.1
     dev: true
 
-  github.com/MooncellWiki/sponsorkit/14695a2d24a513a6e034723f1c38a918cbf201c3:
-    resolution: {tarball: https://codeload.github.com/MooncellWiki/sponsorkit/tar.gz/14695a2d24a513a6e034723f1c38a918cbf201c3}
+  github.com/MooncellWiki/sponsorkit/91803fc5c48160cafc51a55ae35c5acf7499d77a:
+    resolution: {tarball: https://codeload.github.com/MooncellWiki/sponsorkit/tar.gz/91803fc5c48160cafc51a55ae35c5acf7499d77a}
     name: sponsorkit
     version: 0.8.9
     hasBin: true
