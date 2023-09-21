@@ -1,5 +1,5 @@
-name: Setup Node
-description: Setup Node
+name: Setup Fonts
+description: Setup Fonts
 
 runs:
   using: "composite"

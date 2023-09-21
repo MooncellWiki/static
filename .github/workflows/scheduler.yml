@@ -17,7 +17,7 @@ jobs:
         uses: ./.github/actions/setup-node
 
       - name: Setup CJK fonts
-        uses: ./.github/actions/setup-font
+        uses: ./.github/actions/setup-fonts
 
       - name: Update sponsors
         run: pnpm run build
