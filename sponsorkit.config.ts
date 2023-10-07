@@ -1,5 +1,15 @@
 import { BadgePreset, defineConfig, presets } from "sponsorkit";
 
+const SKLAND_LOGO = (width: number, y: number) => `
+<a xlink:href="https://www.skland.com" class="sponsorkit-link" target="_blank" id="SKLand">
+<svg x="${
+  (width - 361) / 2
+}" y="${y}" width="361" height="86" viewBox="0 0 361 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+<image x="0" y="0" width="361" height="86" xlink:href="/assets/skland.png"/>
+</svg>
+</a>
+`;
+
 const past: BadgePreset = {
   avatar: {
     size: 20,
@@ -52,9 +62,18 @@ export default defineConfig({
       preset: presets.xl,
     },
     {
-      title: "Special Sponsors",
-      monthlyDollars: 5000,
-      preset: presets.xl,
-    },
+      title: 'Special Sponsor',
+      monthlyDollars: Infinity,
+      composeAfter(compose, _, config) {
+        if (config.filter?.({ monthlyDollars: Infinity } as any, []) !== false) {
+          compose
+            .addSpan(20)
+            .addText("Special Sponsor", "sponsorkit-tier-title")
+            .addSpan(10)
+            .addRaw(SKLAND_LOGO(config.width!, compose.height))
+            .addSpan(130);
+        }
+      }
+    }
   ],
 });
