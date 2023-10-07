@@ -70,7 +70,8 @@ jobs:
 
       - name: Upload to OSS
         run: |
-          for file in ${{ github.workspace }}/*; do
-            [[ -d $file ]] && ossutil64 cp -f $file ${{ secrets.OSS_REMOTE_PATH }}
+          shopt -s extglob
+          for file in ${{ github.workspace }}/!(*/); do
+            ossutil64 cp -f $file ${{ secrets.OSS_REMOTE_PATH }}
           done
         shell: bash
