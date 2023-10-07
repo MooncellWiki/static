@@ -1,11 +1,20 @@
+import fs from "fs";
 import { BadgePreset, defineConfig, presets } from "sponsorkit";
+
+function toBase64(filePath) {
+  const img = fs.readFileSync(filePath);
+
+  return Buffer.from(img).toString("base64");
+}
 
 const SKLAND_LOGO = (width: number, y: number) => `
 <a xlink:href="https://www.skland.com" class="sponsorkit-link" target="_blank" id="SKLand">
 <svg x="${
   (width - 361) / 2
 }" y="${y}" width="361" height="86" viewBox="0 0 361 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-<image x="0" y="0" width="361" height="86" xlink:href="assets/skland.png"/>
+<image x="0" y="0" width="361" height="86" xlink:href="${
+  "data:image/png;base64," + toBase64("assets/skland.png")
+}"/>
 </svg>
 </a>
 `;
@@ -62,10 +71,12 @@ export default defineConfig({
       preset: presets.xl,
     },
     {
-      title: 'Special Sponsor',
+      title: "Special Sponsor",
       monthlyDollars: Infinity,
       composeAfter(compose, _, config) {
-        if (config.filter?.({ monthlyDollars: Infinity } as any, []) !== false) {
+        if (
+          config.filter?.({ monthlyDollars: Infinity } as any, []) !== false
+        ) {
           compose
             .addSpan(20)
             .addText("Special Sponsor", "sponsorkit-tier-title")
@@ -73,7 +84,7 @@ export default defineConfig({
             .addRaw(SKLAND_LOGO(config.width!, compose.height))
             .addSpan(130);
         }
-      }
-    }
+      },
+    },
   ],
 });
