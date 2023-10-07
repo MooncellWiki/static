@@ -69,5 +69,8 @@ jobs:
           git push
 
       - name: Upload to OSS
-        run: "for file in ./*; do [[ -d $file ]] && ossutil64 cp -f $file ${{ secrets.OSS_REMOTE_PATH }} done"
+        run: |
+          for file in ./*; do
+            [[ -d $file ]] && ossutil64 cp -f $file ${{ secrets.OSS_REMOTE_PATH }}
+          done
         shell: bash
