@@ -69,4 +69,4 @@ jobs:
           git push
 
       - name: Upload to OSS
-        run: ossutil64 cp -f -r . ${{ secrets.OSS_REMOTE_PATH }}
+        run: ossutil64 cp -f --include "sponsors.*" ${{ secrets.OSS_REMOTE_PATH }}
