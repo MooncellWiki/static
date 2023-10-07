@@ -69,4 +69,4 @@ jobs:
           git push
 
       - name: Upload to OSS
-        run: ossutil64 cp -f . ${{ secrets.OSS_REMOTE_PATH }}
+        run: ossutil64 cp -f * ${{ secrets.OSS_REMOTE_PATH }}
