@@ -47,6 +47,11 @@ jobs:
         with:
           ref: assets
 
+      - name: Setup OSS
+        uses: ./.github/actions/setup-oss
+        with:
+          ossutil-config: ${{ secrets.OSSUTIL_CONFIG }}
+
       - name: Download results
         uses: actions/download-artifact@v3
         with:
@@ -60,3 +65,6 @@ jobs:
           git add sponsors.*
           git diff-index --quiet HEAD || git commit -m "chore: update sponsors.svg"
           git push
+
+      - name: Upload to OSS
+        run: ossutil64 cp -f -c ./.ossutilconfig -r . ${{ secrets.OSS_REMOTE_PATH }}
