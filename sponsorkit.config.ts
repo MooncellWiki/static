@@ -5,7 +5,7 @@ const SKLAND_LOGO = (width: number, y: number) => `
 <svg x="${
   (width - 361) / 2
 }" y="${y}" width="361" height="86" viewBox="0 0 361 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-<image x="0" y="0" width="361" height="86" xlink:href="/assets/skland.png"/>
+<image x="0" y="0" width="361" height="86" xlink:href="assets/skland.png"/>
 </svg>
 </a>
 `;
