@@ -7,7 +7,7 @@ settings:
 devDependencies:
   sponsorkit:
     specifier: github:MooncellWiki/sponsorkit#release-afdian
-    version: github.com/MooncellWiki/sponsorkit/91803fc5c48160cafc51a55ae35c5acf7499d77a
+    version: github.com/MooncellWiki/sponsorkit/4869d10d33d514ba171433e6899cb6e7c68a9551
 
 packages:
 
@@ -241,6 +241,10 @@ packages:
   /css-what@6.1.0:
     resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /csv-parse@5.5.2:
+    resolution: {integrity: sha512-YRVtvdtUNXZCMyK5zd5Wty1W6dNTpGKdqQd4EQ8tl/c6KW1aMBB1Kg1ppky5FONKmEqGJ/8WjLlTNLPne4ioVA==}
     dev: true
 
   /dashdash@1.14.1:
@@ -728,15 +732,15 @@ packages:
       acorn: 8.10.0
       pathe: 1.1.1
       pkg-types: 1.0.3
-      ufo: 1.3.0
+      ufo: 1.3.1
     dev: true
 
   /napi-build-utils@1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
     dev: true
 
-  /node-abi@3.47.0:
-    resolution: {integrity: sha512-2s6B2CWZM//kPgwnuI0KrYwNjfdByE25zvAaEpq9IH4zcNsarH8Ihu/UuX6XMPEogDAxkuUFeZn60pXNHAqn3A==}
+  /node-abi@3.50.0:
+    resolution: {integrity: sha512-2Gxu7Eq7vnBIRfYSmqPruEllMM14FjOQFJSoqdGWthVn+tmwEXzmdPpya6cvvwf0uZA3F5N1fMFr9mijZBplFA==}
     engines: {node: '>=10'}
     dependencies:
       semver: 7.5.4
@@ -783,7 +787,7 @@ packages:
     dependencies:
       destr: 2.0.1
       node-fetch-native: 1.4.0
-      ufo: 1.3.0
+      ufo: 1.3.1
     dev: true
 
   /once@1.4.0:
@@ -856,7 +860,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.47.0
+      node-abi: 3.50.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
@@ -1143,12 +1147,12 @@ packages:
     resolution: {integrity: sha512-ofhi8kjIje6npGozTip9Fr8iecmYfEbS06i0JnIg+rh51KakryWF4+jX8lLKZVhy6N+ID45WYSFCxPOdTWCzNg==}
     dev: true
 
-  /ufo@1.3.0:
-    resolution: {integrity: sha512-bRn3CsoojyNStCZe0BG0Mt4Nr/4KF+rhFlnNXybgqt5pXHNFRlqinSoQaTrGyzE4X8aHplSb+TorH+COin9Yxw==}
+  /ufo@1.3.1:
+    resolution: {integrity: sha512-uY/99gMLIOlJPwATcMVYfqDSxUR9//AUcgZMzwfSTJPDKzA1S8mX4VLqa+fiAtveraQUBCz4FFcwVZBGbwBXIw==}
     dev: true
 
-  /unconfig@0.3.10:
-    resolution: {integrity: sha512-tj317lhIq2iZF/NXrJnU1t2UaGUKKz1eL1sK2t63Oq66V9BxqvZV12m55fp/fpQJ+DDmVlLgo7cnLVOZkhlO/A==}
+  /unconfig@0.3.11:
+    resolution: {integrity: sha512-bV/nqePAKv71v3HdVUn6UefbsDKQWRX+bJIkiSm0+twIds6WiD2bJLWWT3i214+J/B4edufZpG2w7Y63Vbwxow==}
     dependencies:
       '@antfu/utils': 0.7.6
       defu: 6.1.2
@@ -1244,13 +1248,14 @@ packages:
       yargs-parser: 21.1.1
     dev: true
 
-  github.com/MooncellWiki/sponsorkit/91803fc5c48160cafc51a55ae35c5acf7499d77a:
-    resolution: {tarball: https://codeload.github.com/MooncellWiki/sponsorkit/tar.gz/91803fc5c48160cafc51a55ae35c5acf7499d77a}
+  github.com/MooncellWiki/sponsorkit/4869d10d33d514ba171433e6899cb6e7c68a9551:
+    resolution: {tarball: https://codeload.github.com/MooncellWiki/sponsorkit/tar.gz/4869d10d33d514ba171433e6899cb6e7c68a9551}
     name: sponsorkit
     version: 0.8.9
     hasBin: true
     dependencies:
       consola: 3.2.3
+      csv-parse: 5.5.2
       dotenv: 16.3.1
       fs-extra: 11.1.1
       image-data-uri: 2.0.1
@@ -1258,6 +1263,6 @@ packages:
       ofetch: 1.3.3
       picocolors: 1.0.0
       sharp: 0.32.6
-      unconfig: 0.3.10
+      unconfig: 0.3.11
       yargs: 17.7.2
     dev: true
