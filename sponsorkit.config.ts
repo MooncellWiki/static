@@ -33,16 +33,16 @@ const past: BadgePreset = {
 export default defineConfig({
   tiers: [
     {
-      title: "Past Sponsors",
+      title: "过去赞助者",
       monthlyDollars: -1,
       preset: past,
     },
     {
-      title: "Backers",
+      title: "赞助者",
       preset: presets.small,
     },
     {
-      title: "Sponsors",
+      title: "普通赞助者",
       monthlyDollars: 68,
       preset: {
         avatar: {
@@ -56,22 +56,22 @@ export default defineConfig({
       },
     },
     {
-      title: "Silver Sponsors",
+      title: "银牌赞助者",
       monthlyDollars: 128,
       preset: presets.medium,
     },
     {
-      title: "Gold Sponsors",
+      title: "金牌赞助者",
       monthlyDollars: 328,
       preset: presets.large,
     },
     {
-      title: "Platinum Sponsors",
+      title: "铂金赞助者",
       monthlyDollars: 648,
       preset: presets.xl,
     },
     {
-      title: "Special Sponsor",
+      title: "特别赞助",
       monthlyDollars: Infinity,
       composeAfter(compose, _, config) {
         if (
@@ -79,7 +79,7 @@ export default defineConfig({
         ) {
           compose
             .addSpan(20)
-            .addText("Special Sponsor", "sponsorkit-tier-title")
+            .addText("特别赞助", "sponsorkit-tier-title")
             .addSpan(10)
             .addRaw(SKLAND_LOGO(config.width!, compose.height))
             .addSpan(130);
