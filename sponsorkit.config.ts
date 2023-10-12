@@ -42,7 +42,7 @@ export default defineConfig({
       preset: presets.small,
     },
     {
-      title: "普通赞助者",
+      title: "铜牌赞助者",
       monthlyDollars: 68,
       preset: {
         avatar: {
