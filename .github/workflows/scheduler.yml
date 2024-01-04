@@ -31,7 +31,7 @@ jobs:
           SPONSORKIT_MOONCELL_PATH: './assets/data.csv'
 
       - name: Upload generated files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated
           path: |
@@ -56,7 +56,7 @@ jobs:
           ref: assets
 
       - name: Download results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: generated
           path: ${{ github.workspace }}
