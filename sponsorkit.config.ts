@@ -1,5 +1,5 @@
+import { BadgePreset, defineConfig, presets } from "@mooncellwiki/sponsorkit";
 import fs from "fs";
-import { BadgePreset, defineConfig, presets } from "sponsorkit";
 
 function toBase64(filePath) {
   const img = fs.readFileSync(filePath);
