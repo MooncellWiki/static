@@ -3,6 +3,6 @@
     "build": "sh build.sh"
   },
   "devDependencies": {
-    "@mooncellwiki/sponsorkit": "^0.10.0"
+    "@mooncellwiki/sponsorkit": "^0.10.1"
   }
 }

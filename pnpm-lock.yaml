@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@mooncellwiki/sponsorkit':
-    specifier: ^0.10.0
-    version: 0.10.0
+    specifier: ^0.10.1
+    version: 0.10.1
 
 packages:
 
@@ -211,8 +211,8 @@ packages:
     dev: true
     optional: true
 
-  /@mooncellwiki/sponsorkit@0.10.0:
-    resolution: {integrity: sha512-Z6tgse6gkQyfiiX/kdiuO1z1w14k9F3V1Dv1YSPMxApxXHl9K2TnmDea8DMaYj8/HKvgGkbubmtIRGP2sAKfhQ==}
+  /@mooncellwiki/sponsorkit@0.10.1:
+    resolution: {integrity: sha512-0DLCQWKjj0/ICm7H1hj+WlLRsSsQBQ2akTTnzkMqwLg12VP4XaQOWzyJFL4RGTb+kBPduvX+nwXxAznpUyKs9Q==}
     hasBin: true
     dependencies:
       consola: 3.2.3
