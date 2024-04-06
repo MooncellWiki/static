@@ -3,6 +3,6 @@
     "build": "sh build.sh"
   },
   "devDependencies": {
-    "sponsorkit": "github:MooncellWiki/sponsorkit#release-afdian"
+    "@mooncellwiki/sponsorkit": "^0.10.0"
   }
 }
