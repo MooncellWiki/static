@@ -54,12 +54,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: generated
-          path: ${{ github.workspace }}
+          path: ${{ github.workspace }}/generated
 
       - name: Upload to OSS
         run: |
           shopt -s extglob
-          for file in ${{ github.workspace }}/!(*/); do
+          for file in ${{ github.workspace }}/generated/!(*/); do
             ossutil64 cp -f $file ${{ secrets.OSS_REMOTE_PATH }}
           done
         shell: bash
