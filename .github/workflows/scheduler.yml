@@ -36,7 +36,6 @@ jobs:
           name: generated
           path: |
             ${{ github.workspace }}/sponsors.*
-            ${{ github.workspace }}/.cache.json
 
   update-sponsors:
     runs-on: ubuntu-latest
