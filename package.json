@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "build": "sh build.sh"
+    "build": "sponsorkit"
   },
   "devDependencies": {
-    "@mooncellwiki/sponsorkit": "^0.10.1"
+    "@mooncellwiki/sponsorkit": "^0.13.1",
+    "@types/node": "^20.12.11"
   }
 }

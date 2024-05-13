@@ -1,4 +1,4 @@
-import { BadgePreset, defineConfig, presets } from "@mooncellwiki/sponsorkit";
+import { defineConfig, tierPresets, type BadgePreset } from "@mooncellwiki/sponsorkit";
 import fs from "fs";
 
 function toBase64(filePath) {
@@ -19,6 +19,10 @@ const SKLAND_LOGO = (width: number, y: number) => `
 </a>
 `;
 
+const year = new Date().getFullYear();
+const month = new Date().getMonth() + 1;
+
+const date = `${year}-${month.toString().padStart(2, "0")}`;
 const past: BadgePreset = {
   avatar: {
     size: 20,
@@ -31,6 +35,8 @@ const past: BadgePreset = {
 };
 
 export default defineConfig({
+  outputDir: ".",
+  formats: ["svg", "png"],
   tiers: [
     {
       title: "过去赞助者",
@@ -39,11 +45,11 @@ export default defineConfig({
     },
     {
       title: "赞助者",
-      preset: presets.small,
+      preset: tierPresets.small,
     },
     {
       title: "铜牌赞助者",
-      monthlyDollars: 68,
+      monthlyDollars: 5,
       preset: {
         avatar: {
           size: 42,
@@ -57,18 +63,18 @@ export default defineConfig({
     },
     {
       title: "银牌赞助者",
-      monthlyDollars: 128,
-      preset: presets.medium,
+      monthlyDollars: 10,
+      preset: tierPresets.medium,
     },
     {
       title: "金牌赞助者",
-      monthlyDollars: 328,
-      preset: presets.large,
+      monthlyDollars: 25,
+      preset: tierPresets.large,
     },
     {
       title: "铂金赞助者",
-      monthlyDollars: 648,
-      preset: presets.xl,
+      monthlyDollars: 50,
+      preset: tierPresets.xl,
     },
     {
       title: "特别赞助",
@@ -84,6 +90,50 @@ export default defineConfig({
             .addRaw(SKLAND_LOGO(config.width!, compose.height))
             .addSpan(130);
         }
+      },
+    },
+  ],
+  renders: [
+    {
+      name: `sponsors.${date}`,
+      width: 1000,
+      includePastSponsors: false,
+      renderer: "circles",
+    },
+    {
+      name: "sponsors.all",
+      width: 1000,
+      includePastSponsors: true,
+      renderer: "circles",
+    },
+    {
+      name: "sponsors",
+      width: 800,
+      includePastSponsors: true,
+      renderer: "tiers",
+    },
+    {
+      name: "sponsors.wide",
+      width: 1800,
+      includePastSponsors: true,
+      renderer: "tiers",
+    },
+    {
+      name: "sponsors.part1",
+      width: 800,
+      includePastSponsors: true,
+      renderer: "tiers",
+      filter(sponsor) {
+        return sponsor.monthlyDollars >= 9.9;
+      },
+    },
+    {
+      name: "sponsors.part2",
+      width: 800,
+      includePastSponsors: true,
+      renderer: "tiers",
+      filter(sponsor) {
+        return sponsor.monthlyDollars < 9.9;
       },
     },
   ],
