@@ -1,11 +1,11 @@
 {
   "type": "module",
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.4.0",
   "scripts": {
     "build": "sponsorkit"
   },
   "devDependencies": {
     "@mooncellwiki/sponsorkit": "^0.13.4",
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.14.9"
   }
 }

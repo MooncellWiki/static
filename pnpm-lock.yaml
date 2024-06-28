@@ -12,8 +12,8 @@ importers:
         specifier: ^0.13.4
         version: 0.13.4
       '@types/node':
-        specifier: ^20.12.12
-        version: 20.12.12
+        specifier: ^20.14.9
+        version: 20.14.9
 
 packages:
 
@@ -140,8 +140,8 @@ packages:
     resolution: {integrity: sha512-a7OG9sdrQLEW7/6H/bZ5hvrPfhg36fyAQ38FRHqAN6cAzJ27WCn3F//7RLrhlBbtDh5nL1fZXERe50vexn5igw==}
     hasBin: true
 
-  '@types/node@20.12.12':
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  '@types/node@20.14.9':
+    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -421,7 +421,7 @@ snapshots:
       unconfig: 0.3.13
       yargs: 17.7.2
 
-  '@types/node@20.12.12':
+  '@types/node@20.14.9':
     dependencies:
       undici-types: 5.26.5
 
