@@ -5,7 +5,7 @@
     "build": "sponsorkit"
   },
   "devDependencies": {
-    "@mooncellwiki/sponsorkit": "^0.14.0",
+    "@mooncellwiki/sponsorkit": "^0.14.1",
     "@types/node": "^20.14.11"
   }
 }

@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mooncellwiki/sponsorkit':
-        specifier: ^0.14.0
-        version: 0.14.0
+        specifier: ^0.14.1
+        version: 0.14.1
       '@types/node':
         specifier: ^20.14.11
         version: 20.14.11
@@ -412,8 +412,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@mooncellwiki/sponsorkit@0.14.0':
-    resolution: {integrity: sha512-bdIi6TxTDIeM77kY5UdJEX+PCbuRub/6ybwhii1awqomCfmfGC6XLweAZkKRYJazEgyt77nrKU9YwDIFkrcI8Q==}
+  '@mooncellwiki/sponsorkit@0.14.1':
+    resolution: {integrity: sha512-PehJdlqvCBZ2tiQfliZBVPr482VO7wAGG0dQIFksOSlIAdoGI5AEy0cg7cuCTrFogu8nwV6Jg4yglzKS1Q38qg==}
     hasBin: true
 
   '@types/node@20.14.11':
@@ -892,7 +892,7 @@ snapshots:
   '@img/sharp-win32-x64@0.33.4':
     optional: true
 
-  '@mooncellwiki/sponsorkit@0.14.0':
+  '@mooncellwiki/sponsorkit@0.14.1':
     dependencies:
       '@antfu/utils': 0.7.10
       consola: 3.2.3
