@@ -12,8 +12,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       '@types/node':
-        specifier: ^20.14.11
-        version: 20.14.11
+        specifier: ^20.14.14
+        version: 20.14.14
 
 packages:
 
@@ -416,8 +416,8 @@ packages:
     resolution: {integrity: sha512-PehJdlqvCBZ2tiQfliZBVPr482VO7wAGG0dQIFksOSlIAdoGI5AEy0cg7cuCTrFogu8nwV6Jg4yglzKS1Q38qg==}
     hasBin: true
 
-  '@types/node@20.14.11':
-    resolution: {integrity: sha512-kprQpL8MMeszbz6ojB5/tU8PLN4kesnN8Gjzw349rDlNgsSzg90lAVj3llK99Dh7JON+t9AuscPPFW6mPbTnSA==}
+  '@types/node@20.14.14':
+    resolution: {integrity: sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==}
 
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
@@ -910,7 +910,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@types/node@20.14.11':
+  '@types/node@20.14.14':
     dependencies:
       undici-types: 5.26.5
 
