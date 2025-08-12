@@ -13,7 +13,7 @@ jobs:
     name: Generate sponsors
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Setup Node
         uses: ./.github/actions/setup-node
@@ -43,7 +43,7 @@ jobs:
     needs: generate-sponsors
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Setup OSS
         uses: ./.github/actions/setup-oss
@@ -51,7 +51,7 @@ jobs:
           ossutil-config: ${{ secrets.OSSUTIL_CONFIG }}
 
       - name: Download results
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: generated
           path: ${{ github.workspace }}/generated
