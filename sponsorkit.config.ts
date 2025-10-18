@@ -22,7 +22,7 @@ const SKLAND_LOGO = (width: number, y: number) => `
 const HORAIN_LOGO = (width: number, y: number) => `
 <a xlink:href="https://www.horain.net/" class="sponsorkit-link" target="_blank" id="Horain">
 <svg x="${
-  width / 2 - 43
+  width / 2 + 6
 }" y="${y}" width="361" height="86" viewBox="0 0 361 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 <image x="0" y="0" width="361" height="86" xlink:href="${
   "data:image/png;base64," + toBase64("assets/horain/340x100.png")
@@ -99,7 +99,7 @@ export default defineConfig({
             .addSpan(20)
             .addText("特别赞助", "sponsorkit-tier-title")
             .addSpan(10)
-            .addRaw(SKLAND_LOGO(config.width!, compose.height)+HORAIN_LOGO(config.width!+100, compose.height))
+            .addRaw(SKLAND_LOGO(config.width!, compose.height)+HORAIN_LOGO(config.width!, compose.height))
             .addSpan(130);
         }
       },
