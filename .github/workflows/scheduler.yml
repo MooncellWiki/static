@@ -28,7 +28,9 @@ jobs:
           SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
           SPONSORKIT_AFDIAN_EXECHANGERATE: 1
           SPONSORKIT_AFDIAN_WEB_AUTH_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_WEB_AUTH_TOKEN }}
-          SPONSORKIT_MOONCELL_PATH: './assets/data.csv'
+          SPONSORKIT_AFDIAN_ACCOUNT: ${{ secrets.SPONSORKIT_AFDIAN_ACCOUNT }}
+          SPONSORKIT_AFDIAN_PASSWORD: ${{ secrets.SPONSORKIT_AFDIAN_PASSWORD }}
+          SPONSORKIT_MOONCELL_PATH: "./assets/data.csv"
 
       - name: Upload generated files
         uses: actions/upload-artifact@v4
