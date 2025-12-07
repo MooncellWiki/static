@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mooncellwiki/sponsorkit':
-        specifier: ^17.0.0
-        version: 17.0.0
+        specifier: ^17.0.1
+        version: 17.0.1
       '@types/node':
         specifier: ^22.16.5
         version: 22.16.5
@@ -157,8 +157,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@mooncellwiki/sponsorkit@17.0.0':
-    resolution: {integrity: sha512-ufHStMlC1KLwHXGfVERW6z/HZ9JwRcm61CPL6OmwB7E3K3EVFF1S9vtTV2Eih0euDmRpmdgMG2q/k0DpQNhe7g==}
+  '@mooncellwiki/sponsorkit@17.0.1':
+    resolution: {integrity: sha512-AZw9P9SQYm5DvZbbo9c/we4FFQcUtkn/Oa0EZ/OhKh5Hx00KOwFmiAU7+TjWVTwiUhsJU3KJyZLl80iLAqfiuQ==}
     hasBin: true
 
   '@quansync/fs@1.0.0':
@@ -218,8 +218,8 @@ packages:
     resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
 
-  tslib@2.6.3:
-    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
@@ -237,7 +237,7 @@ snapshots:
 
   '@emnapi/runtime@1.7.1':
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
     optional: true
 
   '@img/colour@1.0.0': {}
@@ -336,7 +336,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@mooncellwiki/sponsorkit@17.0.0':
+  '@mooncellwiki/sponsorkit@17.0.1':
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -416,7 +416,7 @@ snapshots:
       '@img/sharp-win32-ia32': 0.34.5
       '@img/sharp-win32-x64': 0.34.5
 
-  tslib@2.6.3:
+  tslib@2.8.1:
     optional: true
 
   ufo@1.6.1: {}
