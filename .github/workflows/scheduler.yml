@@ -13,7 +13,7 @@ jobs:
     name: Generate sponsors
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Node
         uses: ./.github/actions/setup-node
@@ -45,7 +45,7 @@ jobs:
     needs: generate-sponsors
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup OSS
         uses: ./.github/actions/setup-oss
