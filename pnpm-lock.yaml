@@ -12,8 +12,8 @@ importers:
         specifier: ^17.0.1
         version: 17.0.1
       '@types/node':
-        specifier: ^24.13.0
-        version: 24.13.0
+        specifier: ^24.13.4
+        version: 24.13.4
 
 packages:
 
@@ -180,8 +180,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@types/node@24.13.0':
-    resolution: {integrity: sha512-5vtOqGQr4NJKeEzV441FcOi2MeG9UTWq9LqVLGneDdu4vlX17H8kQ2PA2UmNwCUGPVDj4oBjNhS7ReVEIWJJrg==}
+  '@types/node@24.13.4':
+    resolution: {integrity: sha512-YJ7EqCstVTzIr0fMr7qul/977en+pQHrfmuKIo6Zr9i75Be21dr3MovcfvGtyvi2HAUrRerWps5sMO9I7WaxDw==}
 
   ansis@4.2.0:
     resolution: {integrity: sha512-HqZ5rWlFjGiV0tDm3UxxgNRqsOTniqoKZu0pIAfh7TZQMGuZK+hH0drySty0si0QXj1ieop4+SkSfPZBPPkHig==}
@@ -367,7 +367,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@types/node@24.13.0':
+  '@types/node@24.13.4':
     dependencies:
       undici-types: 7.18.2
 
