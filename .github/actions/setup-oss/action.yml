@@ -10,7 +10,15 @@ runs:
   using: "composite"
   steps:
     - name: Install ossutil
-      run: "sudo -v ; curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash"
+      run: |
+        version=2.4.1
+        name=ossutil-$version-linux-amd64
+        cd "$RUNNER_TEMP"
+        curl -fsSLO https://gosspublic.alicdn.com/ossutil/v2/$version/$name.zip
+        echo "57ee4c56796a40144acd6b0b96b53b4ba75e5cec09c01d8d0313c09a5524022f  $name.zip" | sha256sum -c -
+        unzip -q $name.zip
+        sudo install -m 755 $name/ossutil /usr/local/bin/ossutil
+        ossutil version
       shell: bash
 
     - name: Write ossutil config
