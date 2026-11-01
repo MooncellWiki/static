@@ -6,6 +6,6 @@
   },
   "devDependencies": {
     "@mooncellwiki/sponsorkit": "^17.0.1",
-    "@types/node": "^24.13.0"
+    "@types/node": "^26.6.6"
   }
 }
